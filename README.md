@@ -6,6 +6,7 @@ Projeto de automação E2E desenvolvido com Cypress para validação dos princip
 
 ## Estrutura do Projeto
 
+```
 cypress-inventario-cti/
 ├── cypress/
 │   ├── docs/
@@ -31,6 +32,7 @@ cypress-inventario-cti/
 ├── cypress.config.js
 ├── package.json
 └── README.md
+```
 
 ---
 
@@ -135,6 +137,8 @@ Essa abordagem tornou o teste mais resiliente frente à inconsistência de dados
 Para validar a geração de documentos em PDF, foi utilizada a interceptação da abertura de uma nova aba (`window.open`). A partir disso, a URL do PDF foi capturada e processada via requisição (`cy.request`), permitindo a leitura do conteúdo utilizando a biblioteca `pdf-parse`.
 
 Com essa abordagem, foi possível validar diretamente o conteúdo textual do PDF, garantindo que as informações geradas estavam corretas, como títulos e dados do relatório/termo.
+
+---
 
 ### Conclusão
 
