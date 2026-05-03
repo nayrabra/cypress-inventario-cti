@@ -147,8 +147,8 @@ As soluções adotadas permitiram aumentar a robustez dos testes automatizados, 
 ---
 
 ## Melhorias Futuras
-Implementação de massa de dados controlada
-Criação de dados via API
-Execução em pipeline CI/CD
+- Implementação de massa de dados controlada
+- Criação de dados via API
+- Execução em pipeline CI/CD
 
 
