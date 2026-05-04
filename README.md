@@ -79,7 +79,9 @@ cypress-inventario-cti/
 
 ## Configuração
 
-Crie um arquivo `cypress.env.json` baseado no exemplo:
+Antes de executar os testes, é necessário configurar as credenciais de acesso ao sistema.
+
+Crie um arquivo chamado `cypress.env.json` na raiz do projeto, utilizando como base o arquivo `cypress.env.example.json`:
 
 ```json
 {
@@ -88,8 +90,13 @@ Crie um arquivo `cypress.env.json` baseado no exemplo:
 }
 ```
 
-> Obs: O arquivo `cypress.env.json` não está versionado por conter dados sensíveis.  
-> Utilize o arquivo `cypress.env.example.json` como base para configuração.
+> O arquivo `cypress.env.json` não está versionado por conter dados sensíveis.
+> 
+> Utilize o arquivo `cypress.env.example.json` como referência para criação do seu arquivo local.
+> 
+> Substitua os valores pelos dados válidos do ambiente de teste.
+> 
+> Caso não seja configurado, os testes que dependem de autenticação poderão falhar.
 
 ---
 
