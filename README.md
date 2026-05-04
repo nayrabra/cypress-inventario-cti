@@ -79,7 +79,7 @@ cypress-inventario-cti/
 
 ## Configuração
 
-Antes de executar os testes, é necessário configurar as credenciais de acesso ao sistema.
+Antes de executar os testes, é necessário configurar as credenciais de acesso ao sistema, pois todos os cenários dependem de autenticação.
 
 Crie um arquivo chamado `cypress.env.json` na raiz do projeto, utilizando como base o arquivo `cypress.env.example.json`:
 
@@ -96,7 +96,7 @@ Crie um arquivo chamado `cypress.env.json` na raiz do projeto, utilizando como b
 > 
 > Substitua os valores pelos dados válidos do ambiente de teste.
 > 
-> Caso não seja configurado, os testes que dependem de autenticação poderão falhar.
+> Caso não possua acesso ao sistema, não será possível executar os testes automatizados.
 
 ---
 
