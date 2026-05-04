@@ -29,9 +29,10 @@ cypress-inventario-cti/
 │   │   └── utils/
 │   │   │   └── pdfHelper.js
 │   │   ├── e2e.js
+├── .gitignore
+├── README.md
 ├── cypress.config.js
-├── package.json
-└── README.md
+└── cypress.env.example.json
 ```
 
 ---
@@ -87,15 +88,20 @@ Crie um arquivo `cypress.env.json` baseado no exemplo:
 }
 ```
 
+> Obs: O arquivo `cypress.env.json` não está versionado por conter dados sensíveis.  
+> Utilize o arquivo `cypress.env.example.json` como base para configuração.
+
 ---
 
 ## Instalação
 
 ```bash
 npm install
+
+# Cypress
 npm install cypress --save-dev
 
-# leitura do pdf
+# Leitura de PDF
 npm install pdf-parse
 ```
 
@@ -112,9 +118,9 @@ npx cypress run
 
 ## Observações
 
-Alguns testes dependem da disponibilidade de dados no ambiente (ex: ativos livres para vínculo).
-Foi identificada a necessidade de massa de dados controlada para maior estabilidade dos testes.
-A validação de PDFs é realizada utilizando a biblioteca pdf-parse.
+- Alguns testes dependem da disponibilidade de dados no ambiente (ex: ativos livres para vínculo).
+- Foi identificada a necessidade de massa de dados controlada para maior estabilidade dos testes.
+- A validação de PDFs é realizada utilizando a biblioteca pdf-parse.
 
 ---
 
